@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:orientation="vertical"
+    android:background="@android:color/darker_gray"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtEncabezado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:text="MI CALCULADORA"
+        android:textSize="45sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtValor1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="VALOR 1"
+        android:textSize="20sp"
+        android:layout_marginBottom="10dp"/>
+
+    <EditText
+        android:id="@+id/lblValor1"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginBottom="20dp"
+        android:background="@android:color/background_light"
+        android:hint="Ingrese el primer valor" />
+
+    <TextView
+        android:id="@+id/txtValor2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="VALOR 2"
+        android:textSize="20sp"
+        android:layout_marginBottom="10dp"/>
+
+    <EditText
+        android:id="@+id/lblValor2"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginBottom="20dp"
+        android:background="@android:color/background_light"
+        android:hint="Ingrese el segundo valor" />
+
+    <RelativeLayout
+        android:layout_margin="10dp"
+        android:layout_marginBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btnExponente"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="EXPONENTE"
+            android:textSize="12sp"/>
+
+        <Button
+            android:id="@+id/btnRadical"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="RADICAL"
+            android:textSize="12sp"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/btnExponente"
+            android:layout_toEndOf="@+id/btnExponente"
+            android:layout_marginBottom="20dp"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txtResultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="RESULTADO:"
+        android:textSize="20sp"
+        android:layout_marginBottom="20dp"/>
+
+    <Button
+        android:id="@+id/btnLimpiar"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="LIMPIAR"
+        android:layout_gravity="center"/>
+
+</LinearLayout>
